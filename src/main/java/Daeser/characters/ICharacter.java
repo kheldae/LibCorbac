@@ -13,4 +13,6 @@ public interface ICharacter extends ILoggable {
      * @param notes The new notes of that character. It musn't be empty and be new to being changed.
      */
     void setNotes(String notes);
+
+    IBalance getBalance();
 }
