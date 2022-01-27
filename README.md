@@ -6,10 +6,10 @@ This project is two-sided : it aims first to create an open-source library for r
 
 This library should be able to :
 
-- [ ] Handle character creation and manipulation \
-- [ ] Handle a standard parsing way to make characters "talk" \
-- [ ] Handle a multi-characters economy, but at the cost of liberty \
-- [ ] Handle dice rolling, the heart of any tabletop RPG \
+- [ ] Handle character creation and manipulation
+- [ ] Handle a standard parsing way to make characters "talk"
+- [ ] Handle a multi-characters economy, but at the cost of liberty
+- [ ] Handle dice rolling, the heart of any tabletop RPG
 
 ## How to install
 
