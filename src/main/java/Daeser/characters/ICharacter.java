@@ -1,6 +1,6 @@
 package Daeser.character;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 import Daeser.ILoggable;
 
@@ -17,8 +17,21 @@ public interface ICharacter extends ILoggable {
     void setNotes(String notes);
 
     /**
-     * Method to get
-     * @return
+     * Method to add a new balance to the character. If a balance with the same characteristics already exists, the method shall abort to keep data safety.
+     * @param name The name of the new balance, to keep track of it later and recognize it.
+     * @param balance The concerned economic balance to add to the character.
      */
-    ArrayList<IBalance> getBalances();
+    void addBalance(String name, IBalance balance);
+
+    /**
+     * Method to get the different econmic balances of the character. This method is meant to keep compatibility with the rest of the API to handle transsactions.
+     * @return An ArrayList containing all the balances of the character.
+     */
+    HashMap<String,IBalance> getBalances();
+
+    /**
+     * Standard getter to know what are the notes about this character. This is useful to other apps who need the information in gameplay.
+     * @return The actual notes of the character, a default value if it wasn't set earlier.
+     */
+    String getNotes();
 }
